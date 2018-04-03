@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yk.alertdialog.MainActivity">
+
+    <Button
+        android:id="@+id/btn_normal_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="NormalDialog"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_list_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="ListDialog"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_radio_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="RadioDialog"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:cursorVisible="false"/>
+
+    <Button
+        android:id="@+id/btn_date_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="DateDialog"/>
+    <Button
+        android:id="@+id/btn_time_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="TimeDialog"/>
+
+    <DigitalClock
+        android:id="@+id/digitalClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DigitalClock"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <AnalogClock
+        android:id="@+id/analogClock"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_progress_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="ProgressDialog"/>
+</LinearLayout>
